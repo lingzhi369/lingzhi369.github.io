@@ -6,12 +6,12 @@ body {
 
 /* Header */
 
-header {
+/* header {
     background-color: #78a7d8;
     text-align: center;
     padding-top: 50px;
     padding-bottom: 20px;
-}
+} */
 
 /* Make the header a flex container */
 .hero {
@@ -19,7 +19,7 @@ header {
     align-items: center;
     justify-content: center;
     padding: 20px;
-    background-color: #f4f4f4; /* Light background */
+    background-color: #78a7d8; /* Light background */
     gap: 20px; /* Space between image and text */
 }
 
@@ -39,7 +39,7 @@ header {
 /* Right column: Text */
 .hero-right {
     flex: 2;
-    text-align: left;
+    text-align: center;
 }
 
 .hero-right h1 {
