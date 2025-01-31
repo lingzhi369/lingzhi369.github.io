@@ -13,6 +13,58 @@ header {
     padding-bottom: 20px;
 }
 
+/* Make the header a flex container */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f4f4f4; /* Light background */
+    gap: 20px; /* Space between image and text */
+}
+
+/* Left column: Image */
+.hero-left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-image {
+    width: 150px; /* Adjust image size */
+    height: auto;
+    border-radius: 10px; /* Rounded corners */
+}
+
+/* Right column: Text */
+.hero-right {
+    flex: 2;
+    text-align: left;
+}
+
+.hero-right h1 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.hero-right h2 {
+    font-size: 18px;
+    color: #666;
+}
+
+/* Responsive Design: Stack elements on small screens */
+@media (max-width: 600px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-left {
+        margin-bottom: 15px;
+    }
+}
+
+
 h1, h2 {
         font-family: "Kirang Haerang", serif;
       }
