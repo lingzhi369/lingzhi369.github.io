@@ -13,19 +13,18 @@ body {
     padding-bottom: 20px;
 } */
 
-/* Make the header a flex container */
+/* Make header a flex container */
 .hero {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    background-color: #78a7d8; /* Light background */
-    gap: 20px; /* Space between image and text */
+    align-items: center; /* Vertically center content */
+    justify-content: center; /* Centers the whole section */
+    padding: 40px;
+    background-color: #78a7d8;
 }
 
 /* Left column: Image */
 .hero-left {
-    flex: 1;
+    flex: 1; /* Takes 1 part of space */
     display: flex;
     justify-content: center;
 }
@@ -33,13 +32,17 @@ body {
 .hero-image {
     width: 150px; /* Adjust image size */
     height: auto;
-    border-radius: 10px; /* Rounded corners */
+    border-radius: 10px; /* Optional: Adds rounded corners */
 }
 
-/* Right column: Text */
+/* Right column: Center text vertically */
 .hero-right {
-    flex: 2;
-    text-align: center;
+    flex: 2; /* Takes 2 parts of space */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers text vertically */
+    text-align: left;
+    padding-left: 20px; /* Adds some space between image and text */
 }
 
 .hero-right h1 {
@@ -52,15 +55,20 @@ body {
     color: #666;
 }
 
-/* Responsive Design: Stack elements on small screens */
+/* Responsive Design: Stack layout on smaller screens */
 @media (max-width: 600px) {
     .hero {
         flex-direction: column;
         text-align: center;
+        padding: 20px;
     }
 
     .hero-left {
         margin-bottom: 15px;
+    }
+
+    .hero-right {
+        padding-left: 0; /* Remove left padding for small screens */
     }
 }
 
