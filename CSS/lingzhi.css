@@ -48,11 +48,12 @@ body {
 .hero-right h1 {
     font-size: 60px;
     margin-bottom: 5px;
+    color: #ffffff;
 }
 
 .hero-right h2 {
     font-size: 30px;
-    color: #666;
+    color: #ffffff;
 }
 
 /* Responsive Design: Stack layout on smaller screens */
