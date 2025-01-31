@@ -46,12 +46,12 @@ body {
 }
 
 .hero-right h1 {
-    font-size: 24px;
+    font-size: 60px;
     margin-bottom: 5px;
 }
 
 .hero-right h2 {
-    font-size: 18px;
+    font-size: 30px;
     color: #666;
 }
 
@@ -77,7 +77,7 @@ h1, h2 {
         font-family: "Kirang Haerang", serif;
       }
       
-header h1 {
+/* header h1 {
     color: #ffffff;
     font-size: 90px;
     
@@ -94,7 +94,7 @@ header img {
     width: 380px;
     height: auto;
     border: 10px solid #ffffff;
-}
+} */
 
 main {
     max-width: 800px;
